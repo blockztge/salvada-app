@@ -1,0 +1,25 @@
+{
+  "short_name": "Salvada",
+  "name": "Salvada - Predicciones de Fútbol",
+  "description": "Predicciones de fútbol con IA y datos reales. Salvación de pobreza 😂",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#c8a84b",
+  "background_color": "#04080f",
+  "categories": ["sports", "entertainment"]
+}
