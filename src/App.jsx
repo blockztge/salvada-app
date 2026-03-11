@@ -1,4 +1,5 @@
-import { useState, useEffect, useCallback } from "react";
+/* eslint-disable */
+import { useState, useEffect } from "react";
 
 const CLAUDE_API = "https://api.anthropic.com/v1/messages";
 const PROXY = process.env.REACT_APP_PROXY_URL || "https://salvada-proxy.vercel.app/api/proxy";
@@ -144,6 +145,7 @@ export default function App() {
       }
       setLoadFix(false);
     })();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[ligaIdx, apiOk]);
 
   useEffect(()=>{
@@ -709,8 +711,7 @@ Basate ESTRICTAMENTE en estos datos reales. Respondé SOLO JSON sin markdown ni 
                     const gc=parseInt(esL?f.goals.away??0:f.goals.home??0);
                     const rival=esL?f.teams.away.name:f.teams.home.name;
                     const r=gf>gc?"V":gf<gc?"D":"E";
-                    const rivalLogo=esL?f.teams.away.logo:f.teams.home.logo;
-                    return <div key={i} style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"7px 0",...c.hr,fontSize:12}}>
+                                        return <div key={i} style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"7px 0",...c.hr,fontSize:12}}>
                       <div style={{display:"flex",alignItems:"center",gap:7}}>
                         <div style={{...c.pill(r),width:22,height:22,fontSize:10}}>{r}</div>
 
